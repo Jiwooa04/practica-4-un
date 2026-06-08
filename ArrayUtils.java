@@ -29,7 +29,13 @@ public class ArrayUtils
      */
     public int suma(int[] arreglo) {
         //TODO: Completar la implementación, reemplazando la línea siguiente
-        
+        if(arreglo == null){
+            throw new IllegalArgumentException("arreglo nulo");
+        }
+        int suma = 0;
+        for(int i = 0; i< arreglo.length; i++){
+            suma += arreglo[i];
+        }
         return 0;
     }
     
